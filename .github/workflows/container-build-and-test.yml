@@ -46,3 +46,4 @@ jobs:
           run: snyk container monitor troysnyk/snyk-juice-shop:linux --tags="component=pkg:${{ github.repository }}@${{ github.ref_name }}" --org=${{ secrets.SNYK_ORG_ID }} --file=Dockerfile
           env:
             SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+
